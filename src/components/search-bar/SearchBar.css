@@ -1,0 +1,22 @@
+.search-wrapper {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 10px;
+    height: 2rem;
+    box-shadow: 0 0 8px #ddd;
+    align-items: center;
+}
+
+input[type=search] {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    margin-left: 5px;
+}
+
+input[type=search]:focus {
+    outline: none;
+}

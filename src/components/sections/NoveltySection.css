@@ -1,0 +1,23 @@
+.novidade {
+    background-image: url("../../img/iphone-13.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em;
+    text-align: left;
+}
+
+button {
+    padding: .4em;
+    border-radius: .8em;
+    font-weight: 600;
+    color: white;
+}
+
+.buy-btn {
+    background-color: #092BC1;
+    transition: background-color .5s ease;
+}
+
+.buy-btn:hover {
+    background-color: #0B1957;  
+}

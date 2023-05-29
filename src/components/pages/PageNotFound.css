@@ -1,0 +1,16 @@
+.notFound {
+    background: linear-gradient(315deg, #092BC1, #0B1957);
+    color: white;
+    height: 100vh;
+    margin: auto;
+    padding: .4em;
+}
+
+.notFound h1,
+.notFound h2 {
+    margin-bottom: .2em;
+}
+
+.notFound button {
+    margin-top: .4em;
+}

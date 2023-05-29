@@ -1,0 +1,21 @@
+.newsletter {
+    background: #092BC1;
+    background: linear-gradient(315deg, #092BC1, #0B1957);
+    padding: 2em;
+}
+
+.newsletter input[type=email] {
+    padding: .5em;
+    margin: 15px 0;
+    border-radius: .5em;
+    width: 300px;
+}
+
+.sign-btn {
+    background-color: #EC093E;
+    transition: background-color .5s ease-in-out;
+}
+
+.sign-btn:hover {
+    background-color: #af193c;  
+}
