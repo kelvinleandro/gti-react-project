@@ -1,0 +1,8 @@
+.ver-tudo {
+    color: black;
+}
+
+.ver-tudo:hover {
+    color: #092BC1;
+    text-decoration: underline;
+}

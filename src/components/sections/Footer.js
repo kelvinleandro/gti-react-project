@@ -17,7 +17,7 @@ const Footer = () => {
           <li><BsYoutube size={25} /></li>
         </ul>
       </div>
-      <div>
+      <div className='text-center'>
         <h3>Casas Acre</h3>
         <ul>
           <li>Quem somos</li>
@@ -26,7 +26,7 @@ const Footer = () => {
           <li>FAQ</li>
         </ul>
       </div>
-      <div>
+      <div className='text-center'>
         <h3>Ajuda</h3>
         <ul>
           <li>Política de Troca e Devolução</li>

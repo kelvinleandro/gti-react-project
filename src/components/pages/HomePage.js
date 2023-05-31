@@ -2,14 +2,16 @@ import React from 'react'
 import NoveltySection from '../sections/NoveltySection'
 import NewsletterSection from '../sections/NewsletterSection'
 import PromoSection from '../sections/PromoSection'
+import BestSellersSection from '../sections/BestSellersSection'
 
 const Main = () => {
   return (
-    <div>
+    <main>
       <PromoSection />
       <NoveltySection />
       <NewsletterSection />
-    </div>
+      <BestSellersSection />
+    </main>
   )
 }
 

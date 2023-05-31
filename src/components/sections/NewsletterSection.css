@@ -2,6 +2,7 @@
     background: #092BC1;
     background: linear-gradient(315deg, #092BC1, #0B1957);
     padding: 2em;
+    text-align: center;
 }
 
 .newsletter input[type=email] {
