@@ -1,12 +1,60 @@
 .promo {
-    background: linear-gradient(90deg, rgba(105,6,29,1) 0%, rgba(236,9,62,1) 35%, rgba(252,0,59,1) 100%);
-
+    align-items: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     color: white;
-    padding: 2em;
+    width: 100%;
 }
+
+.promo h1,
+.promo h2,
+.promo p {
+    margin-bottom: .5rem;
+}
+
+.promo .banner{ 
+    background:linear-gradient(-55deg, #092BC1 29%, #051140 29.1%, #051140 68%, #092BC1 68.1%); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.promo .banner .man{ 
+    width: 25%;
+}
+
+.promo .banner .man img{ 
+    width: 100%; 
+}
+
+.promo .banner .samsung{ 
+    width: 25%;
+} 
+    
+.promo .banner .samsung img{ 
+    width:100%; 
+} 
 
 .offer {
-    color: #092BC1;
+    color: #EC093E;
     font-weight: bold;
 }
+    
+@media (max-width:768px){ 
+    .promo .banner .samsung{ 
+        display: none; 
+    }
 
+    .promo .banner .man {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    .promo .banner {
+        flex-wrap: wrap;
+    }
+}

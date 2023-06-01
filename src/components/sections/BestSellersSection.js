@@ -24,8 +24,8 @@ const BestSellersSection = () => {
           <Link to="/catalogo" className='ver-tudo font-medium'>Ver catálogo completo</Link>
       </div>
       <div className='w-full p-4 m-auto grid grid-cols-2 md:grid-cols-4 gap-5 justify-center'>
-        {bestSellers.map(product => {
-          return <ProductCard key={product.nome} product={product} />
+        {bestSellers.length > 0 && bestSellers.map((product, index) => {
+          return <ProductCard key={index} product={product} />
         })}
       </div>
     </section>

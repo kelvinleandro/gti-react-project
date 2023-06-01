@@ -7,7 +7,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import PageNotFound from './components/pages/PageNotFound';
 import CatalogPage from './components/pages/CatalogPage';
 import HomePage from './components/pages/HomePage';
-// import ProductPage from './components/pages/ProductPage';
+import ProductPage from './components/pages/ProductPage';
 
 const router = createBrowserRouter([
   {
@@ -23,10 +23,10 @@ const router = createBrowserRouter([
           path: "/catalogo",
           element: <CatalogPage />
         },
-        // {
-        //   path: "catalogo/:id",
-        //   element: <ProductPage />
-        // }
+        {
+          path: "catalogo/:id",
+          element: <ProductPage />
+        }
       ]
   },
 ]);

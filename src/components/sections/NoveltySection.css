@@ -1,7 +1,6 @@
 .novidade {
-    background-image: url("../../img/iphone-13.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 4em;
+    background-color: white;
+    padding: 2em;
     text-align: left;
+    width: 100%;
 }
