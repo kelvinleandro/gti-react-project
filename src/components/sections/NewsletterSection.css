@@ -11,12 +11,3 @@
     border-radius: .5em;
     width: 300px;
 }
-
-.sign-btn {
-    background-color: #EC093E;
-    transition: background-color .5s ease-in-out;
-}
-
-.sign-btn:hover {
-    background-color: #af193c;  
-}

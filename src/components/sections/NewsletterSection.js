@@ -9,7 +9,7 @@ const NewsletterSection = () => {
       <form>
         <input type="email" id="email" name="email" placeholder="Digite seu email"></input>
         <br/>
-        <button type="button" className='sign-btn'>Inscrever-se</button>
+        <button type="button" className='my-btn red-btn hover:scale-105'>Inscrever-se</button>
       </form>
     </section>
   )

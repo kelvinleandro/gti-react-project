@@ -1,0 +1,34 @@
+.my-btn {
+    font-size: 14px;
+    padding: .4em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .8em;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: -10px 16px 32px -3px rgba(0,0,0,0.1);
+    transition: .4s;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blue-btn {
+    background: linear-gradient(164deg, #092BC1 0%, #051140 100%);
+    border: solid #092BC1 1px;
+}
+
+.blue-btn:active {
+    background: #fff;
+    color: #092BC1;
+}
+
+.red-btn {
+    background: linear-gradient(164deg, #EC093E 0%, #800925 100%);
+    border: solid #EC093E 1px;
+}
+
+.red-btn:active {
+    background: #fff;
+    color: #EC093E;
+}

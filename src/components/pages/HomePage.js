@@ -9,8 +9,8 @@ const Main = () => {
     <main>
       <PromoSection />
       <NoveltySection />
-      <NewsletterSection />
       <BestSellersSection />
+      <NewsletterSection />
     </main>
   )
 }

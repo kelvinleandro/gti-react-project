@@ -11,7 +11,7 @@ const PromoSection = () => {
       cupom <span className='offer'>ACRE10</span> e ganhe 10% de desconto em qualquer celular</h2>
       <p className='font-medium text-xl uppercase'>Confira nosso catálogo</p>
       <Link to="/catalogo">
-        <button type='button' className='buy-btn'>VER CATÁLOGO</button>
+        <button type='button' className='my-btn blue-btn hover:scale-105'>VER CATÁLOGO</button>
       </Link>
     </section>
   )
