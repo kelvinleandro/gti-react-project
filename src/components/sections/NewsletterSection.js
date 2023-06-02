@@ -8,7 +8,7 @@ const NewsletterSection = () => {
       <h3 className='font-medium text-lg text-white'>Fique por dentro das novidades e não perca nossas promoções</h3>
       <form>
         <input type="email" id="email" name="email" placeholder="Digite seu email"></input>
-        <br/>
+        <br />
         <button type="button" className='my-btn red-btn hover:scale-105'>Inscrever-se</button>
       </form>
     </section>

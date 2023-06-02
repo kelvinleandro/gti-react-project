@@ -3,6 +3,8 @@ import NoveltySection from '../sections/NoveltySection'
 import NewsletterSection from '../sections/NewsletterSection'
 import PromoSection from '../sections/PromoSection'
 import BestSellersSection from '../sections/BestSellersSection'
+import BrandsSection from '../sections/BrandsSection'
+import AboutSection from '../sections/AboutSection'
 
 const Main = () => {
   return (
@@ -10,6 +12,8 @@ const Main = () => {
       <PromoSection />
       <NoveltySection />
       <BestSellersSection />
+      <BrandsSection />
+      <AboutSection />
       <NewsletterSection />
     </main>
   )

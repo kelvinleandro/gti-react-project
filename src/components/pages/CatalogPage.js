@@ -27,7 +27,7 @@ const CatalogPage = () => {
       <h1 className='font-bold text-4xl text-center'>CATÁLOGO</h1>
       <div className='w-full p-4 m-auto grid grid-cols-2 md:grid-cols-4 gap-5 justify-center'>
         {currentProducts.map((product, index) => {
-          return <ProductCard key={index} product={product} />
+          return <ProductCard key={index} product={product} index={index} />
         })}
       </div>
       <Pagination 

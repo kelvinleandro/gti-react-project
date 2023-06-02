@@ -1,0 +1,23 @@
+.brand-section {
+    width: 100%;
+    padding: 1rem;
+}
+
+.brand-section h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-section span {
+    color: #092BC1;
+}
+
+.brand-section img {
+    max-height: 50px;
+    margin: 1em;
+}
+
+.brands{
+    align-items: center;
+    padding: .5rem;
+}

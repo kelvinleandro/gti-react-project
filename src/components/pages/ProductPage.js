@@ -5,8 +5,6 @@ const ProductPage = () => {
   // const {nome, img, descricao, preco} = {product};
   const {id} = useParams();
   const [product, setProduct] = useState(null);
-  // const location = useLocation();
-  // const { product } = location.state;
 
   const getProduct = async () => {
     const url = "https://apitrainees.herokuapp.com/celulares/"

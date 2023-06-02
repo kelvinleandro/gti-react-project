@@ -1,0 +1,11 @@
+.about-section {
+    background: rgb(236,9,62);
+    background: linear-gradient(315deg, rgba(236,9,62,1) 50%, rgba(128,9,37,1) 50%);
+    color: white;
+    padding: 2rem;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 400px;
+}

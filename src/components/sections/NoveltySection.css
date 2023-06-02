@@ -1,5 +1,6 @@
 .novidade {
     background-color: white;
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(184,194,237,1) 33%, rgba(9,43,193,1) 100%);
     padding: 2em;
     text-align: left;
     width: 100%;
