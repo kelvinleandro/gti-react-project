@@ -23,7 +23,7 @@ const CatalogPage = () => {
   },[]);
 
   return (
-    <section>
+    <section className='relative z-10'>
       <h1 className='font-bold text-4xl text-center'>CATÁLOGO</h1>
       <div className='w-full p-4 m-auto grid grid-cols-2 md:grid-cols-4 gap-5 justify-center'>
         {currentProducts.map((product, index) => {

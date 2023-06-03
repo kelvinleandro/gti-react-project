@@ -1,40 +1,35 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { AiOutlineShoppingCart, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { FaSearch } from 'react-icons/fa';
 import { BsFillPersonFill } from 'react-icons/bs';
 import logo from '../../img/logo.png'
 
 import SearchBar from '../search-bar/SearchBar';
-import SearchList from '../search-bar/SearchList';
 import './Header.css';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-  const [searchVisible, setSearchVisible] = useState(false);
-  const [searchResults, setSearchResults] = useState([]);
 
   const handleNav = () => {
     setNav(!nav);
   };
   
-  const handleSearchVisible = () => {
-    setSearchVisible(!searchVisible);
-  };
-
   return (
     <header>
         <div className='w-full flex items-center justify-between'>
-          <div className='flex'>
-            <Link to="/" className='logo-header'>
-                <img src={logo} className='logo' alt="Casas Acre Logo" />
-            </Link>
-            <div className='search-container hidden md:flex'>
-              <SearchBar setResults={setSearchResults} />
-              <SearchList products={searchResults} />
+          <div className='w-full flex flex-col md:flex-row'>
+            <div className='flex items-center justify-between'>
+              <Link to="/" className='logo-header'>
+                  <img src={logo} className='logo' alt="Casas Acre Logo" />
+              </Link>
+              <div className='md:hidden' onClick={handleNav} >
+                {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
+              </div>
             </div>
+            <SearchBar />
           </div>
-          <div className='md:inline hidden'>
+
+          <nav className='md:inline hidden'>
             <ul className='desktop-navbar flex items-center'>
               <li>
                 <Link to="/catalogo">Catálogo</Link>
@@ -50,15 +45,8 @@ const Header = () => {
                 <AiOutlineShoppingCart size={30} />
               </li>
             </ul>
-          </div>
-          <div className='md:hidden flex search-and-sidemenu'>
-            <div onClick={handleSearchVisible}>
-              {searchVisible ? <AiOutlineClose size={30}/> : <FaSearch size={30} />}
-            </div>
-            <div onClick={handleNav}>
-              {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
-            </div>
-          </div>
+          </nav>
+          
         </div>
 
         {/* Mobile menu */}
@@ -80,6 +68,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
+
     </header>
   )
 }
