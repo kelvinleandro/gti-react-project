@@ -6,6 +6,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className='w-full inline-block justify-around items-start md:flex'>
+      
       <div className='inline-block'>
         <img src={logo} className='logo h-auto' alt="Casas Acre Logo" />
         <h3 className='text-white uppercase'>redes sociais</h3>
@@ -17,6 +18,7 @@ const Footer = () => {
           <li><BsYoutube size={25} /></li>
         </ul>
       </div>
+
       <div className='text-center'>
         <h3>Casas Acre</h3>
         <ul>
@@ -26,6 +28,7 @@ const Footer = () => {
           <li>FAQ</li>
         </ul>
       </div>
+
       <div className='text-center'>
         <h3>Ajuda</h3>
         <ul>
@@ -35,6 +38,7 @@ const Footer = () => {
           <li>Termos e Condições de Uso</li>
         </ul>
       </div>
+
     </footer>
   )
 }
