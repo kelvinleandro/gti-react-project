@@ -12,6 +12,15 @@
     color: #092BC1;
 }
 
+.brand-img img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.brand-img:hover img {
+    filter: grayscale(0%);
+}
+
 .brand-section img {
     max-height: 50px;
     margin: 1em;

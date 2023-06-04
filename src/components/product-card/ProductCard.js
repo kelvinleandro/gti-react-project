@@ -2,9 +2,9 @@ import React from 'react'
 import './ProductCard.css'
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({product, index}) => {
+const ProductCard = ({product}) => {
   const {nome, preco, img} = product;
-  const pathName = `/catalogo/${index}`;
+  const pathName = `/catalogo/${nome}`;
 
   return (
     <div className='product-card w-full shadow-xl hover:scale-105 duration-300'>

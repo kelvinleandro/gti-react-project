@@ -1,51 +1,63 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 
+import './ProductPage.css'
+
 const ProductPage = () => {
-  // const {nome, img, descricao, preco} = {product};
   const {id} = useParams();
   const [product, setProduct] = useState(null);
 
   const getProduct = async () => {
-    const url = "https://apitrainees.herokuapp.com/celulares/"
-    const response = await fetch(url);
+    const response = await fetch('https://apitrainees.herokuapp.com/celulares');
     const data = await response.json();
-    setProduct(data[id]);
+    const filtered = await data.find((item) => item.nome === id);
+    setProduct(filtered);
   }
   
   useEffect(() => {
     getProduct();
-  },[]);
+  }, []);
   
   return (
-    <section className='w-full'>
-      <div className='w-full grid md:grid-cols-2'>
-        <div>
-          <img src={product.img} alt={product.nome} />
-        </div>
-        <div className='product-detail'>
-          <h1>{product.nome}</h1>
-          <p>{product.preco}</p>
-          <button className='w-[50%] my-btn red-btn hover:scale-105'>adicionar ao carrinho</button>
-          <button className='w-[50%] my-btn blue-btn hover:scale-105'>comprar agora</button>
-          <div>
-            <p>Calcule o frete e prazo de entrega</p>
-            <input
-              type="text"
-              pattern="[0-9]*"
-              inputMode="numeric"
-              maxLength="8"
-              placeholder="_____-___"
-            />
-            <button className='my-btn blue-btn'>Calcular</button>
+    <>
+      {product ? 
+      <section className='w-full p-5 product-page'>
+        <div className='w-full grid md:grid-cols-2'>
+          
+          <div className='product-img'>
+            <img src={product.img} alt={product.nome} />
+          </div>
+          
+          <div className='product-detail'>
+            <h1 className='font-bold text-3xl'>{product.nome}</h1>
+            <p className='font-medium text-xl'>{product.preco}</p>
+            <div className='flex justify-between md:w-[60%]'>
+              <button className='w-[40%] my-btn red-btn hover:scale-105'>adicionar ao carrinho</button>
+              <button className='w-[40%] my-btn blue-btn hover:scale-105'>comprar agora</button>
+            </div>
+            <div className='frete my-3 flex flex-col sm:flex-row'>
+              <p className='w-full font-medium text-lg'>Calcule o frete e prazo de entrega</p>
+              <div className='w-full'>
+                <input
+                  type="text"
+                  pattern="[0-9]*"
+                  inputMode="numeric"
+                  maxLength="8"
+                  placeholder="_____-___"
+                />
+                <button className='my-btn blue-btn'>Calcular</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='about-product'>
-        <h2>DESCRIÇÃO DO PRODUTO</h2>
-        <p>{product.descricao}</p>
-      </div>
-    </section>
+
+        <div className='w-full about-product'>
+          <h2 className='font-bold text-xl'>DESCRIÇÃO DO PRODUTO</h2>
+          <p className='text-lg'>{product.descricao}</p>
+        </div>
+
+      </section> : <p>Produto não encontrado</p>}
+    </>
   )
 }
 

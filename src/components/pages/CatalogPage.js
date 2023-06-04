@@ -7,7 +7,7 @@ const CatalogPage = () => {
 
   // valores relacionados ao painel de navegação do catalogo
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = useState(4); // valor baixo apenas para visualizar funcionalidade
+  const productsPerPage = 4; // valor baixo apenas para visualizar funcionalidade
   const lastProductIndex = currentPage * productsPerPage;
   const firstProductIndex = lastProductIndex - productsPerPage;
   const currentProducts = products.slice(firstProductIndex, lastProductIndex);
@@ -23,11 +23,11 @@ const CatalogPage = () => {
   },[]);
 
   return (
-    <section className='relative z-10'>
+    <section>
       <h1 className='font-bold text-4xl text-center'>CATÁLOGO</h1>
       <div className='w-full p-4 m-auto grid grid-cols-2 md:grid-cols-4 gap-5 justify-center'>
         {currentProducts.map((product, index) => {
-          return <ProductCard key={index} product={product} index={index} />
+          return <ProductCard key={index} product={product} />
         })}
       </div>
       <Pagination 
