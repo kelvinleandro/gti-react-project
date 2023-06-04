@@ -64,3 +64,9 @@
 #clear-btn {
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .search-container {
+        margin-top: .75rem;
+    }
+}

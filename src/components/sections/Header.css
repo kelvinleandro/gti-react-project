@@ -3,31 +3,6 @@ header {
     padding: 0 10px;
 }
 
-.mobile-navbar {
-    margin-top: 10px;
-    color: white;
-    font-weight: 500;
-}
-
-.mobile-navbar li {
-    margin-bottom: 1em;
-    padding: 4px;
-}
-
-.desktop-navbar li {
-    display: inline;
-    margin-right: 10px;
-    padding: 4px;
-    font-weight: 600;
-    color: black;
-}
-
-.desktop-navbar li:hover {
-    color: #092BC1;
-    cursor: pointer;
-    text-decoration: underline 2px;
-}
-
 .logo-header {
     margin-right: 30px;
 }

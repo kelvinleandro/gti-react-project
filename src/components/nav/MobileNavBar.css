@@ -1,0 +1,10 @@
+.mobile-navbar {
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.mobile-navbar li {
+    margin-bottom: 1em;
+    padding: 4px;
+}
