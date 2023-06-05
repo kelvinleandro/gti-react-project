@@ -6,12 +6,11 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className='w-full inline-block justify-around items-start md:flex'>
-      
-      <div className='inline-block'>
-        <img src={logo} className='logo h-auto' alt="Casas Acre Logo" />
-        <h3 className='text-white uppercase'>redes sociais</h3>
 
-        <ul className='social-icons flex'>
+      <div className='flex flex-col'>
+        <img src={logo} className='logo h-auto' alt="Casas Acre Logo" />
+
+        <ul className='social-icons flex mx-auto mt-2'>
           <li><BsFacebook size={25} /></li>
           <li><BsInstagram size={25} /></li>
           <li><BsTwitter size={25} /></li>
