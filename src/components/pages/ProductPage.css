@@ -1,6 +1,14 @@
+.product-page::before {
+    content: "";
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: .5rem;
+}
+
 .product-detail {
     padding: .75rem;
 }
+
 
 .product-detail h1,
 .product-detail p,

@@ -1,6 +1,7 @@
 .search-container {
     display: flex;
     flex-direction: column;
+    width: 300px;
 }
 
 .search-input {
@@ -17,7 +18,7 @@
     font-size: 1.2em;
     padding: 1.2rem;
     height: 30px;
-    width: 300px;
+    width: 90%;
 }
 
 .search-input input:focus {
@@ -26,6 +27,7 @@
 
 .search-icon {
     margin-right: 5px;
+    width: 10%;
 }
 
 .search-item:hover {
@@ -68,5 +70,6 @@
 @media (max-width: 768px) {
     .search-container {
         margin-top: .75rem;
+        width: 100%;
     }
 }
