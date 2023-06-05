@@ -36,7 +36,7 @@ const ProductPage = () => {
                 <button className='w-[40%] my-btn blue-btn hover:scale-105'>comprar agora</button>
               </div>
 
-              <div className='frete my-3 flex flex-col sm:flex-row items-center'>
+              <div className='frete my-3 flex flex-col items-center'>
                 <p className='w-full font-medium text-lg'>Calcule o frete e prazo de entrega</p>
                 <div className='w-full'>
                   <input

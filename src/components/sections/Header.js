@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 import logo from '../../img/logo.png'
+import './Header.css';
 
 import SearchBar from '../search-bar/SearchBar';
-import './Header.css';
 import MobileNavBar from '../nav/MobileNavBar';
 import NavBar from '../nav/NavBar';
 
@@ -20,7 +20,7 @@ const Header = () => {
     <header>
         <div className='w-full flex items-center justify-between'>
 
-          <div className='w-full md:w-[50%] flex flex-col md:flex-row'>
+          <div className='w-full md:w-[40%] flex flex-col md:flex-row'>
             <div className='flex items-center justify-between'>
               <Link to="/" className='logo-header'>
                   <img src={logo} className='logo' alt="Casas Acre Logo" />
