@@ -59,7 +59,13 @@ const SearchBar = () => {
       {filteredProducts.length > 0 && (
         <div className="data-results">
           {filteredProducts.map((product, index) => {
-            return (<Link to="/" className="search-item" key={index}><p>{product.nome}</p></Link>);
+            return (
+              <a
+                className="search-item" 
+                key={index}>
+                <p>{product.nome}</p>
+              </a>
+            );
           })}
         </div>
       )}

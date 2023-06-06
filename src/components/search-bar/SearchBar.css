@@ -39,7 +39,6 @@
     background-color: white;
     box-shadow: 0 0 8px #ddd;
     width: 300px;
-    overflow: hidden;
     overflow-y: scroll;
 }
 
