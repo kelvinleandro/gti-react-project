@@ -56,7 +56,7 @@ const SearchBar = () => {
         </div>
       </div>
         
-      {filteredProducts.length > 0 && (
+      {/* {filteredProducts.length > 0 && (
         <div className="data-results">
           {filteredProducts.map((product, index) => {
             return (
@@ -68,7 +68,7 @@ const SearchBar = () => {
             );
           })}
         </div>
-      )}
+      )} */}
    </div>
   )
 }
