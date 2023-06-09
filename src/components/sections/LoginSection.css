@@ -1,0 +1,87 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}  
+
+.login-section {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding: 1.5rem 2.5rem;
+    border-radius: .4em;
+    text-align: center;
+}
+
+.login-section h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.login-section label {
+    text-align: left;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.login-section input {
+    border: 1px solid #092BC1;
+    border-radius: 5px;
+    padding: .25rem;
+}
+
+.login1-btn {
+    background-color: #092BC1;
+    color: white;
+    border: 1px solid #092BC1;
+    border-radius: 5px;
+    padding: .25rem;
+}
+
+.login-section button {
+    text-align: center;
+}
+
+.login2-btn {
+    color: black;
+    background-color: white;
+    border: 1px solid #092BC1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.login2-btn:hover {
+    background-color: rgba(9, 43, 193, 0.1);
+}
+
+.login2-btn svg {
+    margin-right: 10px;
+}
+
+.login-link {
+    color: #092BC1;
+    text-decoration: underline;
+}
+
+.login-link:hover {
+    cursor: pointer;
+}

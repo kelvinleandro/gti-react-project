@@ -21,7 +21,7 @@
     width: 90%;
 }
 
-.search-input input:focus {
+input:focus {
     outline: none;
 }
 

@@ -4,7 +4,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import './NavBar.css'
 
-const NavBar = () => {
+const NavBar = ({showLogin}) => {
   return (
     <nav className='md:inline hidden'>
       <ul className='desktop-navbar flex items-center'>
@@ -14,7 +14,7 @@ const NavBar = () => {
         <li>
           <Link to="/">Sobre</Link>
         </li>
-        <li>
+        <li onClick={showLogin}>
           <BsFillPersonFill size={30} className='inline'/>
           <p className='inline'>Olá, faça seu login</p>
         </li>

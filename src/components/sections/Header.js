@@ -8,13 +8,19 @@ import './Header.css';
 import SearchBar from '../search-bar/SearchBar';
 import MobileNavBar from '../nav/MobileNavBar';
 import NavBar from '../nav/NavBar';
+import LoginSection from './LoginSection';
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
+  const [loginVisibility, setLoginVisibility] = useState(false);
 
   const handleNav = () => {
     setMobileNav(!mobileNav);
   };
+
+  const handleLoginVisibility = () => {
+    setLoginVisibility(!loginVisibility);
+  }
   
   return (
     <header>
@@ -32,12 +38,15 @@ const Header = () => {
             <SearchBar />
           </div>
 
-          <NavBar />
+          <NavBar showLogin={handleLoginVisibility} />
           
         </div>
 
         {/* Mobile menu */}
         <MobileNavBar isVisible={mobileNav} />
+
+        {/* Login form */}
+        <LoginSection visible={loginVisibility} setVisible={handleLoginVisibility} />
 
     </header>
   )
