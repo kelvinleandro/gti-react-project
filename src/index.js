@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
-import PageNotFound from './components/pages/PageNotFound';
-import CatalogPage from './components/pages/CatalogPage';
-import HomePage from './components/pages/HomePage';
-import ProductPage from './components/pages/ProductPage';
+import PageNotFound from './pages/page-not-found/PageNotFound';
+import CatalogPage from './pages/catalog-page/CatalogPage';
+import HomePage from './pages/homepage/HomePage';
+import ProductPage from './pages/product-page/ProductPage';
 
 const router = createBrowserRouter([
   {

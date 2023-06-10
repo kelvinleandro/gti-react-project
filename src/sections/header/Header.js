@@ -5,10 +5,10 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import logo from '../../img/logo.png'
 import './Header.css';
 
-import SearchBar from '../search-bar/SearchBar';
-import MobileNavBar from '../nav/MobileNavBar';
-import NavBar from '../nav/NavBar';
-import LoginSection from './LoginSection';
+import SearchBar from '../../components/search-bar/SearchBar';
+import MobileNavBar from '../../components/mobile-nav-bar/MobileNavBar';
+import NavBar from '../../components/nav-bar/NavBar';
+import LoginSection from '../login-section/LoginSection';
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -18,7 +18,7 @@ const Header = () => {
     setMobileNav(!mobileNav);
   };
 
-  const handleLoginVisibility = () => {
+  const toggleLoginVisibility = () => {
     setLoginVisibility(!loginVisibility);
   }
   
@@ -38,15 +38,15 @@ const Header = () => {
             <SearchBar />
           </div>
 
-          <NavBar showLogin={handleLoginVisibility} />
+          <NavBar showLogin={toggleLoginVisibility} />
           
         </div>
 
         {/* Mobile menu */}
-        <MobileNavBar isVisible={mobileNav} />
+        <MobileNavBar isVisible={mobileNav} showLogin={toggleLoginVisibility} />
 
         {/* Login form */}
-        <LoginSection visible={loginVisibility} setVisible={handleLoginVisibility} />
+        <LoginSection visible={loginVisibility} setVisible={toggleLoginVisibility} />
 
     </header>
   )

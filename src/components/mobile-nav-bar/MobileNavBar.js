@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './MobileNavBar.css'
 
-const MobileNavBar = ({isVisible}) => {
+const MobileNavBar = ({isVisible, showLogin}) => {
   return (
     <nav className={isVisible ? 'fixed left-0 top-0 w-[70%] h-full border-r border-r-gray-500 bg-[#0b1957] ease-in-out duration-300' : 'fixed left-[-100%]'}>
       <ul className='mobile-navbar'>
@@ -15,7 +15,7 @@ const MobileNavBar = ({isVisible}) => {
         <li>
             Meu carrinho
         </li>
-        <li>
+        <li onClick={showLogin}>
             Olá, faça seu login
         </li>
       </ul>

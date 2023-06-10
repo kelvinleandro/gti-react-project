@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './BestSellersSection.css'
-import ProductCard from '../product-card/ProductCard'
+import ProductCard from '../../components/product-card/ProductCard'
 
 const BestSellersSection = () => {
   const [bestSellers, setBestSellers] = useState([]);
