@@ -46,7 +46,7 @@ const ProductPage = () => {
                     maxLength="8"
                     placeholder="_____-___"
                   />
-                  <button className='my-btn blue-btn'>Calcular</button>
+                  <button className='my-btn blue-btn mt-3 sm:mt-0'>Calcular</button>
                 </div>
 
               </div>
