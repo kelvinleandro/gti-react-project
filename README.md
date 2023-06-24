@@ -1,5 +1,5 @@
 # Preview this React App
-You can preview this site clicking on [this link](https://casasacre.netlify.app/)
+You can preview this site clicking on [this link](https://casasacre.vercel.app/)
 
 ---
 
